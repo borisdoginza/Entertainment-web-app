@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme{
+  --color-blue-950: #10141E;
+  --color-blue-900: #161D2F;
+  --color-blue-500: #5A698F;
+  --color-red-500: #FC4747;
+}
+
+.hidden{
+  display: none;
+}
+
+
+
+input:focus,
+input:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+@layer base {
+  :focus-visible {
+    outline: 2px solid white;
+    outline-offset: 3px;
+  }
+}
